@@ -53,4 +53,7 @@ const fs = require("fs");
 //         console.log("Error",files);
 //     }
 // }));
-fs.renameSync("file2.js", "file_two.js");
+//fs.renameSync("file2.js", "file_two.js");
+
+//Blocking Operation
+//non blocking operation 
