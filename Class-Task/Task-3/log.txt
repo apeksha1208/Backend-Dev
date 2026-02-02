@@ -1,0 +1,3 @@
+2026-01-17T14:12:41.722Z | GET | / | Invalid route
+2026-01-17T14:13:06.915Z | GET | /students | Returned all students
+2026-01-17T14:13:31.720Z | GET | /students/1 | Returned single student
