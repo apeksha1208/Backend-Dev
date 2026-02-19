@@ -3,9 +3,7 @@ const app = express();
 
 app.use(express.json());
 
-// ------------------------
-// Predefined Users
-// ------------------------
+
 const users = [
   { id: 1, email: "sona@gmail.com", password: "1234", role: "Admin" },
   { id: 2, email: "abhishek@gmail.com", password: "abcd", role: "User" }
@@ -14,9 +12,7 @@ const users = [
 // Store active tokens
 let tokens = [];
 
-// ------------------------
-// LOGIN ROUTE
-// ------------------------
+
 app.post("/login", (req, res) => {
   const { email, password } = req.body;
 
@@ -39,9 +35,7 @@ app.post("/login", (req, res) => {
   });
 });
 
-// ------------------------
-// Authentication Middleware
-// ------------------------
+
 const authMiddleware = (req, res, next) => {
   const token = req.headers["authorization"];
 

@@ -3,25 +3,18 @@ const app = express();
 
 app.use(express.json()); // To parse JSON body
 
-// ------------------
-// Logger Middleware
-// ------------------
+
 app.use((req, res, next) => {
   console.log(`${req.method} ${req.url}`);
   next();
 });
 
-// ------------------
-// In-Memory Users Array
-// ------------------
+
 let users = [
   { id: 1, name: "Sona", email: "sona@gmail.com", role: "Admin" },
   { id: 2, name: "Abhishek", email: "abhishek@gmail.com", role: "User" }
 ];
 
-// ------------------
-// Validation Middleware (for POST)
-// ------------------
 const validateUser = (req, res, next) => {
   const { name, email, role } = req.body;
 
@@ -32,11 +25,6 @@ const validateUser = (req, res, next) => {
   next();
 };
 
-// ------------------
-// ROUTES
-// ------------------
-
-// GET /users → Fetch all users
 app.get("/users", (req, res) => {
   res.json(users);
 });
