@@ -1,0 +1,29 @@
+{
+  "name": "backend-dev",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/apeksha1208/Backend-Dev#readme",
+  "bugs": {
+    "url": "https://github.com/apeksha1208/Backend-Dev/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apeksha1208/Backend-Dev.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.0",
+    "ejs": "^4.0.1",
+    "express": "^5.2.1",
+    "mongoose": "^9.4.1",
+    "nodemon": "^3.1.11"
+  },
+  "keywords": []
+}
