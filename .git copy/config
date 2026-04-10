@@ -1,0 +1,36 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+[remote "origin"]
+	url = https://github.com/lakshita3103/Backend-Dev-3Y.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "main"]
+	remote = origin
+	merge = refs/heads/main
+	vscode-merge-base = origin/main
+[branch "unix-commands-git-github"]
+	remote = origin
+	vscode-merge-base = origin/unix-commands-git-github
+	merge = refs/heads/unix-commands-git-github
+[branch "nodejs-programming"]
+	vscode-merge-base = origin/main
+	remote = origin
+	merge = refs/heads/nodejs-programming
+[branch "file-system-operations"]
+	vscode-merge-base = origin/main
+	remote = origin
+	merge = refs/heads/file-system-operations
+[branch "practice-tasks"]
+	vscode-merge-base = origin/file-system-operations
+[branch "express-framework"]
+	vscode-merge-base = origin/main
+[branch "restful-apis-routing"]
+	vscode-merge-base = origin/main
+[branch "introduction-to-databases"]
+	vscode-merge-base = origin/main
+[branch "middleware-express-session-cookies"]
+	vscode-merge-base = origin/main
